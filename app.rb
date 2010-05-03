@@ -61,7 +61,7 @@ module Germanforblack
 
     get '/clear-cache' do
       Smoke::Cache.clear!
-      "Done"
+      redirect '/'
     end
     
     get '/css/*' do
