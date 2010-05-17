@@ -11,10 +11,10 @@ Article.path = "#{__DIR__}/articles"
 
 module Germanforblack
   class Application < Sinatra::Base
-    set :logging, true
+    disable :logging
+    enable :static
     set :public, File.join(File.dirname(__FILE__), 'public')
     set :haml, {:format => :html5, :attr_wrapper => '"'}
-    enable :static
     
     configure :production do
       ENV['APP_ROOT'] ||= File.dirname(__FILE__)
