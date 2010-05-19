@@ -7,4 +7,5 @@ use CanonicalHost do
   end
 end
 
+use Rack::ETag
 run Germanforblack::Application
