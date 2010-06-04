@@ -7,4 +7,5 @@ use CanonicalHost do
   end
 end
 
+use Rack::Exceptional, ENV["EXCEPTIONAL_API_KEY"] if ENV.key? "EXCEPTIONAL_API_KEY"
 run Germanforblack::Application
