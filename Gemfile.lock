@@ -37,34 +37,22 @@ dependencies:
   tilt: 
     group: 
     - :default
-    version: ">= 0"
+    version: = 0.5
     require: 
     - tilt
 specs: 
-- nokogiri: 
-    version: 1.3.2
-- rdiscount: 
-    version: 1.6.3.2
-- daemons: 
-    version: 1.0.10
-- registry: 
-    version: 0.1.2
-- moneta: 
-    version: 0.6.0
-- rest-client: 
-    version: 1.0.3
-- eventmachine: 
-    version: 0.12.10
-- json: 
-    version: 1.4.3
-- simple-rss: 
-    version: "1.2"
-- rack: 
-    version: 1.1.0
-- thin: 
-    version: 1.2.7
 - crack: 
     version: 0.1.7
+- daemons: 
+    version: 1.0.10
+- eventmachine: 
+    version: 0.12.10
+- fastercsv: 
+    version: 1.5.3
+- haml: 
+    version: 3.0.4
+- json: 
+    version: 1.4.3
 - mutter: 
     version: 0.5.3
 - polyglot: 
@@ -73,17 +61,29 @@ specs:
     version: 1.4.5
 - less: 
     version: 1.2.21
-- haml: 
-    version: 3.0.4
-- tilt: 
-    version: "0.9"
+- moneta: 
+    version: 0.6.0
+- nokogiri: 
+    version: 1.3.2
+- rack: 
+    version: 1.1.0
+- rdiscount: 
+    version: 1.6.3.2
+- registry: 
+    version: 0.1.2
+- rest-client: 
+    version: 1.0.3
+- simple-rss: 
+    version: "1.2"
 - sinatra: 
     version: "1.0"
-- fastercsv: 
-    version: 1.5.3
 - smoke: 
     version: 0.5.20
-hash: 9e47a6fd4f6b19f0c9f385cfe87dd39d0608700b
+- thin: 
+    version: 1.2.7
+- tilt: 
+    version: "0.5"
+hash: 0fe949e768d437b1fb72291d9b9be3ce5809eac9
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

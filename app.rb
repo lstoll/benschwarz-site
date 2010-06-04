@@ -39,6 +39,9 @@ module Germanforblack
     get '/articles/:id' do
       @article = Article[params[:id]] || raise(Sinatra::NotFound)
       @event = Smoke[:upcoming].output.first
+      
+      last_modified @article.last_modified
+      expires 600, :public, :must_revalidate
       haml :article, {:layout => :inner_layout}
     end
 
