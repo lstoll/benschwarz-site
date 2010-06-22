@@ -30,7 +30,7 @@ module Germanforblack
       @image = Smoke[:flickr].output.sort_by{rand}.first
       @links = Smoke[:delicious].output
       @projects = Smoke[:github].output
-      @articles = Article.all.sort[0..1]
+      @articles = Article.all.sort[0..2]
       @event = Smoke[:upcoming].output.first
       
       haml :index, {:layout => :layout}

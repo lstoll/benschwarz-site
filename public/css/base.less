@@ -1,21 +1,17 @@
 /* Resets */
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, dt, dd, table, caption, th, td, fieldset, legend { font-weight: normal; margin: 0; padding: 0; color: inherit; list-style-type: none; }
+body, h1, h2, h3, h4, h5, h6, p, a, ul, ol, dt, dd, table, caption, th, td, fieldset, legend, blockquote { font-weight: normal; margin: 0; padding: 0; color: inherit; list-style-type: none; }
 
 /* Makes HTML5 structural elements structural */
 article, aside, footer, header, nav, section { display: block; }
 
-.border-radius (@radius: 5px) { border-radius: @radius; }
-.border-top-left-radius (@radius: 5px) { border-top-left-radius: @radius; -moz-border-radius-topleft: @radius; -webkit-border-top-left-radius: @radius;}
-.border-top-right-radius (@radius: 5px) { border-top-right-radius: @radius; -moz-border-radius-topright: @radius; -webkit-border-top-right-radius: @radius; }
-.border-bottom-left-radius (@radius: 5px) { border-bottom-left-radius: @radius; -moz-border-radius-bottomleft: @radius; -webkit-border-bottom-left-radius: @radius; }
-.border-bottom-right-radius (@radius: 5px) { border-bottom-right-radius: @radius; -moz-border-radius-bottomright: @radius; -webkit-border-bottom-right-radius: @radius; }
+.border-radius (@radius: 5px) { border-radius: @radius; -webkit-border-radius: @radius; -moz-border-radius: @radius; }
 
 body { font-family: Georgia; }
 #wrapper { width: 960px; margin: 100px auto 0 auto; overflow: auto; }
 img { display: block; }
 .fakecaps { font-size: 50%; text-transform: uppercase; font-variant: small-caps; vertical-align: text-top; }
 
-header { display: block; margin-left: 40px; margin-bottom: 65px; }
+header { margin-left: 40px; margin-bottom: 65px; }
 h1 { font-size: 2em; font-weight: normal; font-style: italic; color: #FF3300; line-height: 1.8em;  }
 h1 a { background-color: #FF3300; text-shadow: #FF3300 1px 1px 1px; text-decoration: underline; color: white; }
 h2 { color: #FF3300; font-size: 1.1em; font-weight: normal; margin-bottom: 30px; }
@@ -23,7 +19,6 @@ blockquote { text-indent: -0.5em; }
 
 header, h1, h2, h3 { text-shadow: white 1px 1px 1px; }
 
-section, footer { display: block; }
 section#content { margin-left: 40px; line-height: 1.5em; font-size: 0.8em; min-height: 300px; }
 section#content p { margin: 0 0 1em 0; }
 section#content ul { clear: both; margin-bottom: 2em; }
@@ -100,7 +95,7 @@ section#footer #cc h4 { background: no-repeat url("/images/cc.png"); text-indent
 
 section#footer span.source { color: #666; }
 
-article { position: relative; display: block; }
+article { position: relative; }
 article h1 { display: inline; }
 article span.attribution { color: #ccc; font-size: 0.8em; font-style: italic; }
 article span.attribution time { color: #999; }
