@@ -3,7 +3,7 @@ __DIR__ = File.dirname(__FILE__)
 require 'lib/core_ext/enumerable'
 require 'ftools'
 
-require '.bundle/environment'
+require 'bundler'
 Bundler.require
 
 %w(helpers stream article haml-filter).each{|r| require "#{__DIR__}/lib/#{r}" }
