@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en"}
   %head
-    %meta{"http-equiv" => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:charset => "utf-8"}
     %meta{:name => "description", :content => @article.excerpt}
     %meta{:name => "keywords", :content => @article.keywords}
     %meta{:name => "author", :content => "Ben Schwarz"}
@@ -12,7 +12,8 @@
       %script{:src => " http://html5shiv.googlecode.com/svn/trunk/html5.js"}
 
     %title= "#{@article.title}, written by Ben Schwarz"
-    %link{:rel => "stylesheet", :href => "/css/base.css"}
+    %link{:rel => "stylesheet/less", :href => "/css/base.less"}
+    %script{:src => "/js/lesscss.js", :async => true}
     %link{:rel => "alternate", :title => "German for black RSS", :href => "http://www.germanforblack.com/articles.atom", :type => "application/atom+xml"}    
     
   %body{:id => @page_id}

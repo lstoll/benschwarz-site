@@ -12,7 +12,8 @@
       %script{:src => " http://html5shiv.googlecode.com/svn/trunk/html5.js"}
 
     %title Ben Schwarz
-    %link{:rel => "stylesheet", :href => "/css/base.css"}
+    %link{:rel => "stylesheet/less", :href => "/css/base.less"}
+    %script{:src => "/js/lesscss.js", :async => true}
     %link{:rel => "openid.server", :href => "http://www.myopenid.com/server"}
     %link{:rel => "openid.delegate", :href => "http://benschwarz.myopenid.com/"}
     %link{:rel => "alternate", :title => "German for black RSS", :href => "http://www.germanforblack.com/articles.atom", :type => "application/atom+xml"}    
@@ -30,6 +31,7 @@
     %script{ :type => "text/javascript" }
       _uacct = "UA-139707-2";
       urchinTracker();
-    %script{:type => "text/javascript", :src => "/js/jquery-1.4.2.min.js"}
-    %script{:type => "text/javascript", :src => "/js/track-external.js"}
+    %script{:src => "/js/jquery-1.4.2.min.js"}  
+    %script{:src => "/js/track-external.js"}
+    
 
