@@ -1,4 +1,8 @@
-@import "reset.css";
+/* Resets */
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, dt, dd, table, caption, th, td, fieldset, legend { font-weight: normal; margin: 0; padding: 0; color: inherit; list-style-type: none; }
+
+/* Makes HTML5 structural elements structural */
+article, aside, footer, header, nav, section { display: block; }
 
 .border-radius (@radius: 5px) { border-radius: @radius; }
 .border-top-left-radius (@radius: 5px) { border-top-left-radius: @radius; -moz-border-radius-topleft: @radius; -webkit-border-top-left-radius: @radius;}
@@ -51,7 +55,7 @@ section#content img { margin: 5px 10px 0 -7px; }
 section#content span.source { color: #999; font-style: italic; }
 section#content span.source a { color: #FF3300; }
 
-section#content h3 { text-transform: uppercase; font-weight: normal; text-decoration: underline; letter-spacing: 0.1em; color: #333; display: inline-block; margin-top: 0.7em; }
+section#content h3 { font-size: 1em; text-transform: uppercase; font-weight: normal; text-decoration: underline; letter-spacing: 0.1em; color: #333; display: inline-block; margin-top: 0.7em; }
 
 section#content li,
 section#content a,
