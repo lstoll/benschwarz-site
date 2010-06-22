@@ -1,0 +1,95 @@
+--- 
+dependencies: 
+  haml: 
+    group: 
+    - :default
+    version: = 3.0.4
+    require: 
+    - haml
+  thin: 
+    group: 
+    - :default
+    version: ">= 0"
+  exceptional: 
+    group: 
+    - :default
+    version: = 2.0.15
+  smoke: 
+    group: 
+    - :default
+    version: ">= 0"
+    require: 
+    - smoke
+  sinatra: 
+    group: 
+    - :default
+    version: ">= 0"
+    require: 
+    - sinatra/base
+  less: 
+    group: 
+    - :default
+    version: ">= 0"
+    require: 
+    - less
+  rdiscount: 
+    group: 
+    - :default
+    version: ">= 0"
+    require: 
+    - rdiscount
+  tilt: 
+    group: 
+    - :default
+    version: = 0.8
+    require: 
+    - tilt
+specs: 
+- crack: 
+    version: 0.1.7
+- daemons: 
+    version: 1.1.0
+- eventmachine: 
+    version: 0.12.10
+- exceptional: 
+    version: 2.0.15
+- fastercsv: 
+    version: 1.5.3
+- haml: 
+    version: 3.0.4
+- json: 
+    version: 1.4.3
+- mutter: 
+    version: 0.5.3
+- polyglot: 
+    version: 0.3.1
+- treetop: 
+    version: 1.4.8
+- less: 
+    version: 1.2.21
+- moneta: 
+    version: 0.6.0
+- nokogiri: 
+    version: 1.3.2
+- rack: 
+    version: 1.2.1
+- rdiscount: 
+    version: 1.6.5
+- registry: 
+    version: 0.1.3
+- rest-client: 
+    version: 1.0.3
+- simple-rss: 
+    version: "1.2"
+- sinatra: 
+    version: "1.0"
+- smoke: 
+    version: 0.5.20
+- thin: 
+    version: 1.2.7
+- tilt: 
+    version: "0.8"
+hash: 09d1fac80151d12c7421f33c01dd516d493346a4
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
